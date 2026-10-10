@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px #0001;
+    }
+    h1 { color: #2563eb; }
+    p { color: #555; }
+    button {
+      padding: 10px 20px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover { background: #1d4ed8; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="message">Hello, World!</h1>
+    <p>Welcome to my first webpage.</p>
+    <button onclick="changeMessage()">Click Me</button>
+  </div>
+
+  <script>
+    function changeMessage() {
+      document.getElementById("message").textContent =
+        "Hello! Thanks for clicking!";
+    }
+  </script>
+</body>
+</html>
